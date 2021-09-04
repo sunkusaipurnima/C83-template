@@ -37,13 +37,16 @@ const CreateStory = (props) => {
       <View style={styles.container}>
         <SafeAreaView style={styles.droidSafeArea} />
         <View style={styles.appTitle}>
-          <Image
-            source={require("../assets/logo.png")}
-            style={styles.iconImage}
-          />
-        </View>
-        <View style={styles.appTitleTextContainer}>
-          <Text style={styles.appTitleText}></Text>
+          <View style={styles.appIcon}>
+            <Image
+              source={require("../assets/logo.png")}
+              style={styles.iconImage}
+            />
+          </View>
+
+          <View style={styles.appTitleTextContainer}>
+            <Text style={styles.appTitleText}></Text>
+          </View>
         </View>
       </View>
     );
